@@ -3,24 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
     android:id="@+id/parent">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imagePerson" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/linLayout"
-        android:layout_toRightOf="@+id/imagePerson"
         android:layout_marginLeft="5dp">
 
     <TextView
         android:textSize="14sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtCountry"
@@ -31,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtCity"
+        android:textColor="@color/black"
         android:text=""
         android:layout_below="@+id/txtCountry"
         android:textSize="12sp"
@@ -40,6 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtTemp"
+        android:textColor="@color/black"
         android:text=""
         android:layout_below="@+id/txtCountry"
         android:textSize="12sp"
@@ -49,16 +50,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtDescription"
+        android:textColor="@color/black"
         android:text=""
         android:layout_below="@+id/txtTemp"
         android:textSize="12sp"
         android:layout_marginTop="2dp"/>
 
     </LinearLayout>
-
-
-
-
-
 
 </RelativeLayout>
